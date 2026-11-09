@@ -1,14 +1,15 @@
 ---
 name: prevent-file-change
 
-"on":
-  pull_request:
-    types:
-      - opened
-      - reopened
-      - edited
-      - synchronize
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# "on":
+#   pull_request:
+#     types:
+#       - opened
+#       - reopened
+#       - edited
+#       - synchronize
+# 
 jobs:
   prevent-file-change:
     uses: sous-chefs/.github/.github/workflows/prevent-file-change.yml@9.0.0

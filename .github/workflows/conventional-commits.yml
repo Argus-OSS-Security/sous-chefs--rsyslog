@@ -1,14 +1,15 @@
 ---
 name: conventional-commits
 
-"on":
-  pull_request:
-    types:
-      - opened
-      - reopened
-      - edited
-      - synchronize
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# "on":
+#   pull_request:
+#     types:
+#       - opened
+#       - reopened
+#       - edited
+#       - synchronize
+# 
 jobs:
   conventional-commits:
     uses: sous-chefs/.github/.github/workflows/conventional-commits.yml@9.0.0

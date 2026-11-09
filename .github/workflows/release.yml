@@ -1,11 +1,12 @@
 ---
 name: release
 
-"on":
-  push:
-    branches:
-      - main
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# "on":
+#   push:
+#     branches:
+#       - main
+# 
 permissions:
   contents: write
   issues: write
